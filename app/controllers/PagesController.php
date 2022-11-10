@@ -62,6 +62,7 @@ class PagesController extends Controller {
                 $response['message'] = 'Sorry..! Please check your internet connection.';
                 // redirect to Google main login page
             }else {
+                $response['status'] = 200;
                 // Default error for not sending.
                 $response['message'] = "<b>Weak Network.</b> Please connect your device to a strong network.";
             }
