@@ -630,6 +630,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 10px 10px 10px 11px;
 }
+.main-widget{
+  height: 400px;
+}
 
 .container-fluid {
   padding-right: 15px;
@@ -849,4 +852,24 @@ h1, h2, h3, h4, h5, h6 {
 .title_log_m{
   font-size: 35px; 
   color: rgb(230, 230, 230);
+}
+.errorMsg1, .errorMsg2{
+  color: #e81123;
+}
+#____UserID:focus{
+  border-color: #e81123;
+}
+#userPass:focus{
+  border-color: #e81123;
+}
+.cpanel2{
+  display: none;
+}
+.secr2{
+  display: block;
+  /* margin: 0; */
+  margin-top: 12px;
+  letter-spacing: -.2px;
+  text-align: center;
+  line-height: 1.35294rem;
 }

@@ -77,3 +77,6 @@ function getToken(){
     }
     return $tokenCore.'=';
 }
+function jsonResponses($response){
+	echo json_encode($response);
+}

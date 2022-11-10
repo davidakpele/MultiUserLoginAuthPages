@@ -72,5 +72,7 @@
         <link rel="stylesheet" type="text/css" href="<?=ASSETS?>css/structure.css" />
         <link rel="stylesheet" href="<?=ASSETS?>css/bootstrap.min.css" />
         <link rel="stylesheet" href="<?=ASSETS?>css/important__style.css" />
+        <script type="text/javascript" src="<?=ASSETS?>js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="<?=ASSETS?>js/bootstrap.js"></script>
         <script src="<?=ASSETS?>js/manifest.json" type="text/json"></script>
     </head>
