@@ -4,6 +4,6 @@ Class Login extends Controller
 {
     function index(){
          
-        $this->view("Login", $data);
+        $this->view("Login");
     }
 }
